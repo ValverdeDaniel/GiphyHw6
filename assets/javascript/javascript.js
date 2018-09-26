@@ -32,7 +32,7 @@ function addButton(gifSearch){
 function displayGifsInContainer(gifSearch){
 	$.ajax({
 		url: "https://api.giphy.com/v1/gifs/search?q=" + gifSearch + 
-		"&api_key=61TKqzUDPHfv40Bqr6iEsqqBCfa360mt&rating=" + Rating + "&limit=" + quantityGifs,
+		"&api_key=dc6zaTOxFJmzC&rating=" + Rating + "&limit=" + quantityGifs,
 		method: "GET"
 	}).then(function(response){
 		response.data.forEach(function(element){
